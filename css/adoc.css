@@ -110,7 +110,8 @@
 .adoc h1{font-size:2.75em}
 .adoc h2{font-size:2.3125em}
 .adoc h3,.adoc #toctitle,.adoc .sidebarblock>.adoc-content>.title{font-size:1.6875em}
-.adoc h4{font-size:1.4375em}}table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+.adoc h4{font-size:1.4375em}
+.adoc table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
 .adoc table thead,.adoc table tfoot{background:#f7f8f7;font-weight:bold}
 .adoc table thead tr th,.adoc table thead tr td,.adoc table tfoot tr th,.adoc table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 .adoc table tr th,.adoc table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
