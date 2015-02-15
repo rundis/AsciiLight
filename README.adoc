@@ -32,3 +32,6 @@ Pull requests are most welcome. Please do not include the transpiled files (*_co
 
 == History
 * 0.1.0 Initial release: Basic features, just to get the ball rolling.
+
+== License
+MIT, same as Light Table. See LICENSE.md for details.
