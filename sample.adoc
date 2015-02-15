@@ -1,0 +1,70 @@
+= Sample document
+Sample document illustrating preview stuff
+v1.0, 2015-02-15: Sample version
+:library: Asciidoctor
+:numbered:
+:idprefix:
+:toc: macro
+:imagesdir: images
+
+
+Basic demo doc for showing a selection of AsciiDoctor features.
+
+== TOC
+toc::[]
+
+== Section
+A text paragraph
+
+=== Subsection
+
+== Admonitions
+
+TIP: Asciidoctor have cool admonitions
+
+== Quotes
+.After landing the cloaked Klingon bird of prey in Golden Gate park:
+[quote, Captain James T. Kirk, Star Trek IV: The Voyage Home]
+Everybody remember where we parked.
+
+== Source code
+[source,clojure]
+----
+(map
+  (fn [x]
+    (+ x 1))
+  [1 2 3 4])
+----
+
+[source,javascript]
+----
+<script>alert("hello");</script>
+----
+
+
+== Tables
+[cols="2*", options="header"]
+|===
+|Name of Column 1
+|Name of Column 2
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|===
+
+
+== Lists
+.A unordered list
+* Item 1
+* Another item
+
+.Ordered list
+. Item 1
+. Item 2
+
+== Images
+image::logo.png[]
+

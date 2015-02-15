@@ -1,0 +1,7 @@
+[[:app :lt.objs.plugins/load-js "asciilight_compiled.js"]
+ [:app :lt.objs.plugins/load-css "css/font-awesome.css"]
+ [:app :lt.objs.plugins/load-css "css/adoc.css"]]
+
+
+
+
