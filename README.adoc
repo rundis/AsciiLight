@@ -21,6 +21,11 @@ With your .adoc file open, open the command bar in (ctrl+space/cmd+space) and se
 .Preview
 image::preview.png[]
 
+
+== Resources
+* Blogpost: http://rundis.github.io/blog/2015/asciilight.html[Scratching my AsciiDoc itch]
+* http://asciidoctor.org/docs/user-manual/[AsciiDoctor User manual]
+
 == Limitiations
 .Probably plenty, a few that springs to mind
 * No source code highlighting (yet)
