@@ -31,11 +31,18 @@ image::preview.png[]
 * No source code highlighting (yet)
 * Not really tested with any advanced AsciiDoc features
 
+
+== Credits
+* Marco Polos' excellent https://github.com/MarcoPolo/lt-markdown[lt-markdown] plugin provided most of the inspiration
+for the plugin implementation
+* AsciiDoc syntax highlighting is provided by a codemirror mode created by Thaddee Tyl in https://github.com/espadrine/AsciiDocBox[AsciiDocBox]
+
 == Contributing
 Pull requests are most welcome. Please do not include the transpiled files (*_compiled*) in the PR.
 
 
 == History
+* 0.2.0 AsciiDoc syntax highlighting. Code highlighting using highlight.js
 * 0.1.0 Initial release: Basic features, just to get the ball rolling.
 
 == License

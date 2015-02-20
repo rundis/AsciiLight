@@ -67,4 +67,3 @@ Everybody remember where we parked.
 
 == Images
 image::logo.png[]
-

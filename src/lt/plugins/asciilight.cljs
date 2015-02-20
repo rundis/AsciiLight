@@ -18,18 +18,20 @@
 (defn get-adoc []
   (js/require (files/join plugin-dir "node_modules/adoc.js")))
 
-
 (defn adoc->html [content base-dir]
   (-> (.convert (get-adoc) content base-dir)
       (clojure.string/replace #"img src=\"*\"" (str "img src=\"" base-dir "/"))))
 
 
 (defn setAdocHTML! [ed obj]
-  (let [html (->
+  (let [container (object/->content obj)
+        html (->
               (adoc->html (.getValue (editor/->cm-ed ed))
                           (files/parent (-> @ed :info :path)))
               (clojure.string/replace #"class=\"content\"" "class=\"adoc-content\""))]
-    (set! (.-innerHTML (object/->content obj)) html)))
+    (set! (.-innerHTML container) html)
+    (doseq [block (dom/$$ "pre code" container)]
+      (.highlightBlock js/hljs block))))
 
 (defn get-filename [ed]
   (-> @ed :info :name))
@@ -40,7 +42,7 @@
 
 (object/object* ::asciilight
                 :tags [:asciilight]
-                :name "markdown"
+                :name "asciilight"
                 :behaviors [::on-close-destroy]
                 :init (fn [this filename]
                         (object/update! this [:name] (constantly (str filename " - Live")))
@@ -56,6 +58,7 @@
 
 (behavior ::read-editor
           :triggers [:change ::read-editor]
+          :throttle 200
           :desc "AsciiLight: Read the content inside an editor"
           :reaction (fn [this]
                       (let [adoc-obj (:adoc @this)]

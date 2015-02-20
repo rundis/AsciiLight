@@ -1,6 +1,10 @@
-[[:app :lt.objs.plugins/load-js "asciilight_compiled.js"]
+[[:app :lt.objs.plugins/load-js ["mode/asciidoc.js" "asciilight_compiled.js" "js/highlight.pack.js"]]
  [:app :lt.objs.plugins/load-css "css/font-awesome.css"]
- [:app :lt.objs.plugins/load-css "css/adoc.css"]]
+ [:app :lt.objs.plugins/load-css "css/adoc.css"]
+ [:app :lt.objs.plugins/load-css "css/github.css"]
+
+
+ [:files :lt.objs.files/file-types [{:exts [:adoc :asciidoc], :mime "text/x-asciidoc", :tags [:editor.asciidoc], :name "asciidoc"}]]]
 
 
 
