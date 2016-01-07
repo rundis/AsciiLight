@@ -42,6 +42,7 @@ Pull requests are most welcome. Please do not include the transpiled files (*_co
 
 
 == History
+* 0.3.0 AsciiDoc conversion in background thread, asciidoc 1.5.3-rc.3 and minor cleanup fixes
 * 0.2.0 AsciiDoc syntax highlighting. Code highlighting using highlight.js
 * 0.1.0 Initial release: Basic features, just to get the ball rolling.
 

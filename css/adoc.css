@@ -73,7 +73,7 @@
 .adoc a img{border:none}
 .adoc p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
 .adoc p aside{font-size:.875em;line-height:1.35;font-style:italic}
-.adoc h1,.adoc h2,.adoc h3,.adoc #toctitle,.adoc .sidebarblock>.adoc-content>.title,.adoc h4,.adoc h5,.adoc h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+.adoc h1,.adoc h2,.adoc h3,.adoc #toctitle,.adoc .sidebarblock>.adoc-content>.title,.adoc h4,.adoc h5,.adoc h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
 .adoc h1 small,.adoc h2 small,.adoc h3 small,.adoc #toctitle small,.adoc .sidebarblock>.adoc-content>.title small,.adoc h4 small,.adoc h5 small,.adoc h6 small{font-size:60%;color:#e99b8f;line-height:0}
 .adoc h1{font-size:2.125em}
 .adoc h2{font-size:1.6875em}

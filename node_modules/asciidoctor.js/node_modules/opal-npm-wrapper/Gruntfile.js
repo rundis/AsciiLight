@@ -18,10 +18,10 @@ module.exports = function(grunt){
     // Define string-replace task
     'string-replace': {
       options: {
-        // replace $inject by $opalInject
+        // replace var Opal = by Opal =
         replacements: [{
-          pattern: /(var\ Opal)/ig,
-          replacement: '//$1'
+          pattern: /var\ (Opal\ =)/ig,
+          replacement: '$1'
         }]
       },
       dist: {
@@ -30,14 +30,27 @@ module.exports = function(grunt){
         }
       }
     },
+
+    simplemocha: {
+      options: {
+        globals: ['should'],
+        timeout: 3000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+        reporter: 'tap'
+      },
+
+      all: { src: ['test/**/*.js'] }
+    }
   });
 
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-string-replace');
+  grunt.loadNpmTasks('grunt-simple-mocha');
 
   // Define defaults task
-  grunt.registerTask('default', ['string-replace', 'concat']);
+  grunt.registerTask('default', ['string-replace', 'concat', 'simplemocha']);
 
 
 };
